@@ -109,7 +109,7 @@ body {
             serif;
         font-size: 18px;
         letter-spacing: 0.85px;
-        margin-bottom: 30px;
+        margin-bottom: 43px;
         margin-left: 4px;
         margin-top: 1px;
     }
@@ -129,7 +129,7 @@ body {
             display: block;
             color: $accent-color;
             font-size: 18px;
-            margin-top: 10px;
+            margin-top: 23px;
             letter-spacing: 0.9px;
             margin-left: 3px;
         }
@@ -174,11 +174,43 @@ body {
 
     &-demo {
         display: block;
+        position: relative;
         background-image: url("../img/book.svg");
         width: 447px;
         height: 643px;
         background-repeat: no-repeat;
         flex-basis: 500px;
+
+        &__title {
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            position: absolute;
+            left: 131px;
+            top: 118px;
+
+            span {
+                font-family: 'Open Sans',
+                    serif;
+                font-size: 14px;
+                color: $accent-color;
+                display: block;
+                text-transform: initial;
+                margin-top: 10px;
+                letter-spacing: 0.7px;
+            }
+        }
+
+        &__author {
+            font-family: 'Open Sans',
+                serif;
+            font-size: 14px;
+            color: $accent-color;
+            letter-spacing: 0.7px;
+            position: absolute;
+            bottom: 52px;
+            left: 87px;
+        }
     }
 }
 
