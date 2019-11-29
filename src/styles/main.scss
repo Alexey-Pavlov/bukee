@@ -192,6 +192,7 @@ body {
 
     &-item {
         margin-bottom: 55px;
+
         &__date {
             font-size: 15px;
             font-family: 'Open Sans', serif;
@@ -209,7 +210,7 @@ body {
             font-size: 15px;
             font-family: 'Open Sans',
                 serif;
-                letter-spacing: 0.75px;
+            letter-spacing: 0.75px;
         }
 
         &__btn {
@@ -380,8 +381,6 @@ body {
                     background-color: #5fc9b3;
                     color: $light-color;
                     padding: 0px 7px;
-
-
                 }
             }
         }
@@ -429,5 +428,137 @@ body {
                 }
             }
         }
+    }
+}
+
+.block-product {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 85px;
+
+    &-item {
+        text-align: center;
+    }
+
+    &-demo {
+        display: block;
+        margin: 0 auto 35px;
+        position: relative;
+        width: 269px;
+        height: 409px;
+        background-image: url(../img/book-min.svg);
+        background-repeat: no-repeat;
+        flex-basis: 500px;
+
+        &__title {
+            font-size: 24px;
+            color: $light-color;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+            position: absolute;
+            left: 71px;
+            top: 71px;
+
+            span {
+                font-family: 'Open Sans', serif;
+                font-size: 12px;
+                color: $accent-color;
+                display: block;
+                text-transform: initial;
+                margin-top: 7px;
+                letter-spacing: 0.6px;
+            }
+
+        }
+
+        &__author {
+            font-family: 'Open Sans', serif;
+            font-size: 12px;
+            color: $accent-color;
+            letter-spacing: 0.6px;
+            position: absolute;
+            bottom: 27px;
+            left: 82px;
+        }
+    }
+
+    &-text {
+        h3 {
+            margin-bottom: 17px;
+        }
+
+        p {
+            font-size: 15px;
+            min-width: 316px;
+            letter-spacing: 0.7px;
+            margin-bottom: 17px;
+        }
+
+        a {
+            font-size: 15px;
+            color: $accent-color;
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 0.5px;
+            border-bottom: 3px solid transparent;
+            padding-bottom: 5px;
+            transition: 0.3s;
+
+            &:hover {
+                border-bottom: 3px solid $accent-color;
+            }
+        }
+    }
+
+    &+.page__btn {
+        display: block;
+        margin: 84px auto 0;
+        padding: 13px 0;
+        max-width: 227px;
+    }
+}
+
+.block-blog {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+        font-size: 18px;
+    }
+
+    &-img {
+        width: 369px;
+        height: 224px;
+        overflow: hidden;
+        position: relative;
+        img {
+            width: 369px;
+            height: 224px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+    }
+
+    &-info {
+        font-size: 15px;
+        a {
+            color: $accent-color;
+            text-decoration: none;
+        }
+    }
+
+    &__desc {
+        font-size: 15px;
+        font-family: 'Open Sans', serif;
+    }
+
+    &+.page__btn {
+        display: block;
+        margin: 84px auto 0;
+        padding: 13px 0;
+        max-width: 227px;
     }
 }
