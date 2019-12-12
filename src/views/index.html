@@ -162,7 +162,21 @@
                         <li>Consectetur adipisicing elit</li>
                         <li>Labore et dolore magna</li>
                     </ol>
-                    <button class="block-about-table__btn">More</button>
+                    <ol class="block-about-table__list block-about-table__list_next" id="nextContentsList"
+                        style="display: none;">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipisicing elit</li>
+                        <li>Labore et dolore magna</li>
+                        <li>Labore et dolore magna</li>
+                        <li>Consectetur adipisicing elit</li>
+                        <li>Labore et dolore magna</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Consectetur adipisicing elit</li>
+                        <li>Labore et dolore magna</li>
+                        <li>Consectetur adipisicing elit</li>
+                        <li>Labore et dolore magna</li>
+                    </ol>
+                    <button id="nextContents" class="block-about-table__btn">More</button>
                 </div>
             </div>
         </div>
@@ -233,7 +247,8 @@
                     </div>
                     <h3>Kate Dennings</h3>
                     <p class="block-carousel__desc block-carousel__expert">Calligraphy Expert</p>
-                    <p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <p class="block-carousel__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
                         maecenas accumsan lacus vel facilisis. </p>
                 </div>
@@ -417,6 +432,10 @@
                 dots: true,
                 arrows: false,
             });
+        });
+        $("#nextContents").click(function () {
+            $("#nextContentsList").fadeIn();
+            $("#nextContents").hide();
         });
     </script>
 </body>
